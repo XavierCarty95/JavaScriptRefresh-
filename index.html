@@ -6,17 +6,14 @@
     <script>
     window.onload=function() { 
         
-        var myString = "The quick brown fox jumped over the lazy dogs";
-                        for(var x=0; x < myString.length; x++){
-                            console.log(myString.charAt(0))
-                        }
-                           
-                var n = myString.includes("xxx")
-                console.log(n)
                 
-                
-                console.log("The x is at index:" + myString.indexOf('x'));
-                
+            var myString = "Four score and seven years ago"; 
+            var n = myString.search("seven")
+            console.log(n)
+            
+            myString = myString.replace("Four" , "Six");
+            console.log(myString);
+        
     }
         
      
