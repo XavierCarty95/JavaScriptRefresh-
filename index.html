@@ -4,26 +4,31 @@
 
     <title>Document</title>
     <script>
-    window.onload=function(){
-    var teams = ["Yankees" , "Mets" , "Giants" , "Jets" , "Knicks" ," Mets" , " Rangers " ]
-     console.log(teams)
-     
-       var  computers = new Array("Compaq" , "Macintosh" , "TI994", "TRS" , "Apple", "Commodore 64" , "Osborn Pro")
-        console.log(computers)
+    window.onload=function(){ var cars = ["Cougars", "Jeep" , "Audi" , "BMW ", "Ford", "Toyota", ];
+    var ticks = cars.length; 
+    var x = 0; 
+    var out = ""
+    while(x < ticks)
+    {
+        out += cars[x]
+        out += "</br>"
+        x++
+    }
+    
+    document.getElementById("result").innerHTML = out
+    
+     var cities = ["Miami" , "New York" , "Boston" , "Chicago" , "New Orleand" , "Austin"];
+     var out = ""
+     for( var z = 0; z < cities.length; z++){
+         
+         out += cities[z]
+         out += "</br>"
+     }
         
-       var  family = [];
-       
-       document.getElementById('result').innerHTML = computers[3];
-       document.getElementById('result').innerHTML += "</br>" + teams[5]
-       
-       family[0] = "Mark";
-       family[1] = "Joan";
-       family[2] = "Brett";
-       computers[3] = "Amiga"
-       document.getElementById('result').innerHTML += "</br>" +family[1]
-       document.getElementById('result').innerHTML += "</br>" +computers[3]
+        document.getElementById('result').innerHTML += out 
         
-    } 
+    }
+        
      
     
      </script>
