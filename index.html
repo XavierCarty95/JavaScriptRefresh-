@@ -4,31 +4,23 @@
 
     <title>Document</title>
     <script>
-    window.onload=function(){ var cars = ["Cougars", "Jeep" , "Audi" , "BMW ", "Ford", "Toyota", ];
-    var ticks = cars.length; 
-    var x = 0; 
-    var out = ""
-    while(x < ticks)
-    {
-        out += cars[x]
-        out += "</br>"
-        x++
-    }
-    
-    document.getElementById("result").innerHTML = out
-    
-     var cities = ["Miami" , "New York" , "Boston" , "Chicago" , "New Orleand" , "Austin"];
-     var out = ""
-     for( var z = 0; z < cities.length; z++){
-         
-         out += cities[z]
-         out += "</br>"
-     }
-        
-        document.getElementById('result').innerHTML += out 
-        
+    window.onload=function(){ years = [1999, 2000, 2001, 2002, 2003 , 2004, 2005, 2006, 2007, 2008]
+                             
+                              years.push(2009)
+                              years.push(2010)
+                              years.pop()
+                              console.log(years.indexOf(2010))
+                              years.forEach(myFunction)
+                              
+                             names = ["Fred" , "Tom" , "Mark" , "Adam" , "Brett"]
+                             console.log(names.sort())
+                            
     }
         
+        function myFunction(item , index){
+            document.getElementById("result").innerHTML += index + '|' + item + "</br>";
+        }
+     
      
     
      </script>
