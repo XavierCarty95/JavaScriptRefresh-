@@ -4,22 +4,21 @@
 
     <title>Document</title>
     <script>
-    window.onload=function(){ years = [1999, 2000, 2001, 2002, 2003 , 2004, 2005, 2006, 2007, 2008]
-                             
-                              years.push(2009)
-                              years.push(2010)
-                              years.pop()
-                              console.log(years.indexOf(2010))
-                              years.forEach(myFunction)
-                              
-                             names = ["Fred" , "Tom" , "Mark" , "Adam" , "Brett"]
-                             console.log(names.sort())
-                            
+    window.onload=function() { 
+        
+        var myString = "The quick brown fox jumped over the lazy dogs";
+                        for(var x=0; x < myString.length; x++){
+                            console.log(myString.charAt(0))
+                        }
+                           
+                var n = myString.includes("xxx")
+                console.log(n)
+                
+                
+                console.log("The x is at index:" + myString.indexOf('x'));
+                
     }
         
-        function myFunction(item , index){
-            document.getElementById("result").innerHTML += index + '|' + item + "</br>";
-        }
      
      
     
